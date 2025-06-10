@@ -23,7 +23,7 @@ X = df['text']    # News article text
 y = df['label']   # 'FAKE' or 'REAL'
 
 # 6. Split the dataset into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=7)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=None)
 
 # 7. Initialize TF-IDF Vectorizer
 tfidf_vectorizer = TfidfVectorizer(stop_words='english', max_df=0.7)
